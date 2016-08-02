@@ -13,13 +13,17 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             var fullDataManager = new FullDataManager();
-            var hardwareList = fullDataManager.GetHardwareList();
+            //fullDataManager.GetHardwareListFromRemote();
+
+          var hardwareList = fullDataManager.GetHardwareList();
             var applicationsList = fullDataManager.GetApplicationList();
+
             Console.WriteLine("Hardware: ");
             foreach (var hard in hardwareList)
             {
                 Console.WriteLine(hard);
             }
+
             Console.WriteLine("-------------------");
             Console.WriteLine("Applications:");
             foreach (var app in applicationsList)
@@ -27,7 +31,7 @@ namespace ConsoleApplication1
                 Console.WriteLine(app);
             }
             Console.WriteLine("-------------------");
-            Console.ReadLine();
+          Console.ReadLine();
         }
     }
 }

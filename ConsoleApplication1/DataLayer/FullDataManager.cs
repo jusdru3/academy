@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Management;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataLayer
 {
@@ -62,6 +59,53 @@ namespace DataLayer
             list.Add($"Computer Ram used: {computerSummary.RamUsage}");
             list.Add($"Computer Availabe disk space in GB: {computerSummary.AvailableDiskSpaceGb}");
             list.Add($"Computer average disk queue length: {computerSummary.AverageDiskQueueLength}");
+            return list;
+        }
+
+        public List<string> GetHardwareListFromRemote()
+        {
+            var list = new List<string>();
+            ManagementScope scope = new ManagementScope();
+            try
+            {
+                //get the credentials to connect to this computer with
+                ConnectionOptions options = new ConnectionOptions();
+                options.Username = "academy";
+                options.Password = "academy";
+                options.EnablePrivileges = true;
+                options.Authority = "ntlmdomain: ";
+                //Create the scope that will connect to the default root for WMI
+                scope = new ManagementScope(@"\\dazgen-wpc\root\CIMV2″, options");
+                scope.Connect();
+                //query the computer for the OS information
+                SelectQuery query = new SelectQuery("SELECT * FROM Win32_OperatingSystem");
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher(scope, query);
+                using (ManagementObjectCollection queryCollection = searcher.Get())
+                {
+                    foreach (ManagementObject m in queryCollection)
+                    {
+                        // Display the remote computer’s information in our labels
+                         list.Add(string.Format(";Computer Name: { 0}", m["csname"]));
+                        //Label1.Text = string.Format(“Windows Directory: { 0}”, m[“WindowsDirectory”]);
+                        //Label1.Text = string.Format(“Operating System: { 0}”, m[“Caption”]);
+                        //Label1.Text = string.Format(“Version: { 0}”, m[“Version”]);
+                        //Label1.Text = string.Format(“Manufacturer: { 0}”, m[“Manufacturer”]);
+                    }
+                }
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
+
+
+
+            
+
             return list;
         }
     }

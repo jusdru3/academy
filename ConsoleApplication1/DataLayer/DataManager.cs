@@ -42,11 +42,12 @@ namespace DataLayer
                         {
                             value = obj["Name"].ToString();
                         }
+
                     }
                     break;
                 case Hardware.Ram:
-                    ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
-                    ManagementObjectSearcher searcherRam = new ManagementObjectSearcher(wql);
+                    ObjectQuery wqlRAM = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
+                    ManagementObjectSearcher searcherRam = new ManagementObjectSearcher(wqlRAM);
                     ManagementObjectCollection resultsRam = searcherRam.Get();
                     foreach (ManagementObject result in resultsRam)
                     {
