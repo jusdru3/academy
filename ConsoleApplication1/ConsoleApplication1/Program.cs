@@ -12,18 +12,21 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            var dataManager = new FullDataManager();
-
-            //var computername = dataManager.GetMetric("computername");
-            //Console.WriteLine($"Computer Name: {computername}");
-
-            //var cpuUsage = dataManager.GetMetric("cpuusage");
-            //Console.WriteLine($"Current CPU usage: {cpuUsage}%");
-
             var fullDataManager = new FullDataManager();
-            fullDataManager.GetComputerSummary();
-
-
+            var hardwareList = fullDataManager.GetHardwareList();
+            var applicationsList = fullDataManager.GetApplicationList();
+            Console.WriteLine("Hardware: ");
+            foreach (var hard in hardwareList)
+            {
+                Console.WriteLine(hard);
+            }
+            Console.WriteLine("-------------------");
+            Console.WriteLine("Applications:");
+            foreach (var app in applicationsList)
+            {
+                Console.WriteLine(app);
+            }
+            Console.WriteLine("-------------------");
             Console.ReadLine();
         }
     }

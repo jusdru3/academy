@@ -59,7 +59,8 @@ namespace DataLayer
                     ManagementObjectCollection resultsRamUsage = searcherRamUsage.Get();
                     foreach (ManagementObject result in resultsRamUsage)
                     {
-                        value = result["FreePhysicalMemory"].ToString();
+                        var temp = (ulong) result["TotalVisibleMemorySize"] - (ulong) result["FreePhysicalMemory"];
+                        value = temp.ToString();
                     }
                     break;
                 case Hardware.VideoCard:

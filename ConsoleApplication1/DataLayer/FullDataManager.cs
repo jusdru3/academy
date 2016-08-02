@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Management;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,20 +31,38 @@ namespace DataLayer
             {
                 Console.Write(e.StackTrace);
             }
-
-
-
             return computerSummary;
         }
 
         public override List<string> GetApplicationList()
         {
-            throw new NotImplementedException();
+            var list = new List<string>();
+            ManagementObjectSearcher mos = new ManagementObjectSearcher("SELECT * FROM Win32_Product");
+            foreach (ManagementObject mo in mos.Get())
+            {
+                if (mo["Name"] != null)
+                {
+                    list.Add(mo["Name"]?.ToString());
+                }
+            }
+            return list;
         }
 
         public override List<string> GetHardwareList()
         {
-            throw new NotImplementedException();
+            var list = new List<string>();
+            var computerSummary = GetComputerSummary();
+            list.Add($"Computer Name: {computerSummary.Name}");
+            list.Add($"Computer User: {computerSummary.User}");
+            list.Add($"Computer CPU: {computerSummary.Cpu}");
+            list.Add($"Computer RAM: {computerSummary.Ram}");
+            list.Add($"Computer GPU: {computerSummary.VideoCard}");
+            list.Add($"Computer IP: {computerSummary.Ip.ToString()}");
+            list.Add($"Computer CPU usage: {computerSummary.CpuUsage}");
+            list.Add($"Computer Ram used: {computerSummary.RamUsage}");
+            list.Add($"Computer Availabe disk space in GB: {computerSummary.AvailableDiskSpaceGb}");
+            list.Add($"Computer average disk queue length: {computerSummary.AverageDiskQueueLength}");
+            return list;
         }
     }
 }
