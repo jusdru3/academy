@@ -14,11 +14,16 @@ namespace ConsoleApplication1
         {
             var dataManager = new FullDataManager();
 
-            var computername = dataManager.GetMetric("computername");
-            Console.WriteLine($"Computer Name: {computername}");
+            //var computername = dataManager.GetMetric("computername");
+            //Console.WriteLine($"Computer Name: {computername}");
 
-            var cpuUsage = dataManager.GetMetric("cpuusage");
-            Console.WriteLine($"Current CPU usage: {cpuUsage}%");
+            //var cpuUsage = dataManager.GetMetric("cpuusage");
+            //Console.WriteLine($"Current CPU usage: {cpuUsage}%");
+
+            var fullDataManager = new FullDataManager();
+            fullDataManager.GetComputerSummary();
+
+
             Console.ReadLine();
         }
     }
