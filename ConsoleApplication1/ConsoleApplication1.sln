@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyWinForms", "AcademyWinFOrms\AcademyWinForms.csproj", "{C0E82C7A-8035-4B14-9A9D-B4F72D363948}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseLayer", "DatabaseLayer\DatabaseLayer.csproj", "{360A78B7-B4BB-4B94-BA74-27FC3A999694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAdder", "DatabaseAdderLayer\DatabaseAdder.csproj", "{7690BD48-64AD-4904-8A9C-3A81055C716D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{C0E82C7A-8035-4B14-9A9D-B4F72D363948}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0E82C7A-8035-4B14-9A9D-B4F72D363948}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0E82C7A-8035-4B14-9A9D-B4F72D363948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{360A78B7-B4BB-4B94-BA74-27FC3A999694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360A78B7-B4BB-4B94-BA74-27FC3A999694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360A78B7-B4BB-4B94-BA74-27FC3A999694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360A78B7-B4BB-4B94-BA74-27FC3A999694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7690BD48-64AD-4904-8A9C-3A81055C716D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7690BD48-64AD-4904-8A9C-3A81055C716D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7690BD48-64AD-4904-8A9C-3A81055C716D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7690BD48-64AD-4904-8A9C-3A81055C716D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

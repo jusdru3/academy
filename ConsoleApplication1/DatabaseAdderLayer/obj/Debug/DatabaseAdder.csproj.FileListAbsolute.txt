@@ -1,0 +1,14 @@
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DatabaseAdderLayer.exe.config
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DatabaseAdderLayer.exe
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DatabaseAdderLayer.pdb
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DatabaseLayer.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DataLayer.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\EntityFramework.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DatabaseLayer.pdb
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\DataLayer.pdb
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\EntityFramework.xml
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\obj\Debug\DatabaseAdder.csprojResolveAssemblyReference.cache
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\obj\Debug\DatabaseAdderLayer.exe
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseAdderLayer\obj\Debug\DatabaseAdderLayer.pdb

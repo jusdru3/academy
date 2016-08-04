@@ -1,0 +1,13 @@
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\DatabaseLayer.dll.config
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\DatabaseLayer.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\DatabaseLayer.pdb
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\EntityFramework.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\EntityFramework.xml
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.csprojResolveAssemblyReference.cache
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.dll
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.pdb
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.Migrations._1.resources
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.csproj.GenerateResource.Cache
+E:\academy\AcademyProject\ConsoleApplication1\DatabaseLayer\obj\Debug\DatabaseLayer.Migrations._2.resources
