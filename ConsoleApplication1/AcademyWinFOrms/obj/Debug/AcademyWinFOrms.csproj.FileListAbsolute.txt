@@ -1,0 +1,11 @@
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\bin\Debug\AcademyWinFOrms.exe.config
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\bin\Debug\AcademyWinFOrms.exe
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\bin\Debug\AcademyWinFOrms.pdb
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\bin\Debug\DataLayer.dll
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\bin\Debug\DataLayer.pdb
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\obj\Debug\AcademyWinFOrms.csprojResolveAssemblyReference.cache
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\obj\Debug\AcademyWinFOrms.Form1.resources
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\obj\Debug\AcademyWinFOrms.Properties.Resources.resources
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\obj\Debug\AcademyWinFOrms.csproj.GenerateResource.Cache
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\obj\Debug\AcademyWinFOrms.exe
+E:\academy\AcademyProject\ConsoleApplication1\AcademyWinFOrms\obj\Debug\AcademyWinFOrms.pdb
