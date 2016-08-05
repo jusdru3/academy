@@ -24,6 +24,8 @@ namespace DatabaseAdderLayer
             t.Dispose(); // Cancel the timer now
             GetComputerUsageData("DESKTOP-EQPUEB1");
             Console.ReadKey();
+            GetAllUsageDatas();
+            Console.ReadKey();
         }
 
         static void AddComputerMetrics()
@@ -78,6 +80,17 @@ namespace DatabaseAdderLayer
                     {
                         Console.WriteLine(usageData.CpuUsage);
                     }
+                }
+            }
+        }
+        static void GetAllUsageDatas()
+        {
+            using (var _ctx = new MetricsContext())
+            {
+                var usageDatas = _ctx.UsageDatas.ToList();
+                foreach (var usageData in usageDatas)
+                {
+                    Console.WriteLine(usageData.CpuUsage);
                 }
             }
         }
