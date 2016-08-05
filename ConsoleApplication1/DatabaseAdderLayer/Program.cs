@@ -15,12 +15,15 @@ namespace DatabaseAdderLayer
     {
         static void Main(string[] args)
         {
+
             AddComputerMetrics();
             
             Timer t = new Timer(AddComputerUsageData, null, 0, 2000);
             Console.WriteLine("monitoring data has started. press any key to stop");
             Console.ReadKey();
             t.Dispose(); // Cancel the timer now
+            GetComputerUsageData("DESKTOP-EQPUEB1");
+            Console.ReadKey();
         }
 
         static void AddComputerMetrics()
@@ -64,5 +67,19 @@ namespace DatabaseAdderLayer
             }
         }
 
+        static void GetComputerUsageData(string computerName)
+        {
+            using (var _ctx = new MetricsContext())
+            {
+                var metrics = _ctx.ComputerMetrics.FirstOrDefault(p => p.Name == computerName);
+                if (metrics != null)
+                {
+                    foreach (var usageData in metrics.UsageDatas)
+                    {
+                        Console.WriteLine(usageData.CpuUsage);
+                    }
+                }
+            }
+        }
     }
 }
